@@ -12,6 +12,6 @@
         "destination": "/index.html"
       }
     ],
-    "preDeploy": ["npm run build"]
+    "predeploy": ["npm run build"]
   }
 }

@@ -7,6 +7,7 @@ import Account from './components/Account'
 import Pages from './pages/Pages'
 import CreatePages from './pages/CreatePages';
 import People from './pages/People';
+import Protected from './protectedRoutes/Protected';
 
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Auth/>}></Route>
             <Route path='/login' element={<AuthLogin/>}></Route>
-            <Route path='/home' element={<Pages/>}></Route>
+            <Route path='/home' element={<Protected>
+              <Pages/>
+            </Protected>}></Route>
             <Route path='/account' element={<Account/>}></Route>
             <Route path='/createPost' element={<CreatePages/>}></Route>
             <Route path='/people' element={<People/>}></Route>

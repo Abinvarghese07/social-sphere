@@ -23,10 +23,10 @@ const Rightbar = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return (
-        <div className=" group w-1/5 h-screen fixed right-0 top-0  bg-zinc-800 mr-[-280px] hover:mr-[5px] duration-300 ease-out overflow-hidden">
+        <div className=" group w-1/5 h-screen fixed right-0 top-0  bg-zinc-800 mr-[-250px] hover:mr-[5px] duration-300 ease-out overflow-hidden">
             <div className='p-4 font-inria'>
-                <GoSidebarExpand size={40} className='text-neutral-300 group-hover:text-pink-700 relative right-14 '/>
-                <div className='p-3 '>
+                <GoSidebarExpand  size={40} className='text-neutral-300 group-hover:text-pink-700 relative left-[-7px] group-hover:rotate-180 duration-500 ease-out'/>  
+                <div className='p-10'>
                     <h1 className='text-3xl font-thin text-neutral-300 underline-offset-8 underline decoration-slate-500'>Top Creaters</h1>
                     <div className='grid grid-cols-1 py-5 gap-6'>
                         {postData.map((items) => (
